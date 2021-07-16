@@ -5,28 +5,28 @@
 class Cirocket < Formula
   desc "Rocket powered task runner to assist delivering ci build missions"
   homepage "https://github.com/nehemming/cirocket"
-  version "0.0.1"
+  version "0.0.2"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nehemming/cirocket/releases/download/v0.0.1/cirocket_0.0.1_Darwin_x86_64.tar.gz"
-      sha256 "ff89b5a2eef55fc9d38d64743db94502c37d9d2622cc04ba39405fad8c20ad16"
+      url "https://github.com/nehemming/cirocket/releases/download/v0.0.2/cirocket_0.0.2_Darwin_x86_64.tar.gz"
+      sha256 "060d03454efaa408f834e73e3a7d7d803c4097526c31e7b366b1d244a3f87155"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nehemming/cirocket/releases/download/v0.0.1/cirocket_0.0.1_Darwin_arm64.tar.gz"
-      sha256 "56008dbbcab5e914ddf68e0d1f05dd63a3b90b4223191c81986c50f0c422c37c"
+      url "https://github.com/nehemming/cirocket/releases/download/v0.0.2/cirocket_0.0.2_Darwin_arm64.tar.gz"
+      sha256 "b13063b11a90f19aa34f22caf4679210fac614252d1e2190a07625cbd8e245d4"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/nehemming/cirocket/releases/download/v0.0.1/cirocket_0.0.1_Linux_x86_64.tar.gz"
-      sha256 "0b0b8bf606fe03f0cb84b6f9314cdacc566880bfc1231e3266ae6b3f8247c1f1"
+      url "https://github.com/nehemming/cirocket/releases/download/v0.0.2/cirocket_0.0.2_Linux_x86_64.tar.gz"
+      sha256 "817e4ec7c1e064a0ca07ecd0fa8dfe5d5deb3a2db128d8bb67dd2936074c71e5"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nehemming/cirocket/releases/download/v0.0.1/cirocket_0.0.1_Linux_arm64.tar.gz"
-      sha256 "f89deea432fb86f2d1ea2ddedfa9ac79fe106b060da1e3b61f43be273c0c37a1"
+      url "https://github.com/nehemming/cirocket/releases/download/v0.0.2/cirocket_0.0.2_Linux_arm64.tar.gz"
+      sha256 "9e9bb207b81b94188ea01fe28c2fc1ed9013d2a3f6e15146445bef0f9530a683"
     end
   end
 
