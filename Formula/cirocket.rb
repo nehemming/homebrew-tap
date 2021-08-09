@@ -11,22 +11,22 @@ class Cirocket < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/nehemming/cirocket/releases/download/v0.2.1/cirocket_0.2.1_Darwin_x86_64.tar.gz"
-      sha256 "e4a3dcf0e4f1b52ca77664beba0e7e22623e5067aedc4032e3744af58ebf57f3"
+      sha256 "2c245c233b10173d7d4e74d8761211ddc6069d1f39b3ba971111200ab52f234d"
     end
     if Hardware::CPU.arm?
       url "https://github.com/nehemming/cirocket/releases/download/v0.2.1/cirocket_0.2.1_Darwin_arm64.tar.gz"
-      sha256 "01a849c9115c9fef1ababd78d61f6867216a1f28017e2dd1f0cec245ac8a6977"
+      sha256 "af4b40714ee7ac2db46fa34a53afad3d273c8f6011940d6d37b04d020566e84a"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/nehemming/cirocket/releases/download/v0.2.1/cirocket_0.2.1_Linux_x86_64.tar.gz"
-      sha256 "6b943ba47e47a7251f12812548908e2bac19700725136daf4766850feec62646"
+      sha256 "6891c9b8d6903178d37c33567dcb58e4534c39e6c5583b0a98cb6b3975c820b8"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/nehemming/cirocket/releases/download/v0.2.1/cirocket_0.2.1_Linux_arm64.tar.gz"
-      sha256 "656521ca04c72c5ac04da8e6ac2697562626155d2d92944cb7b1ad924860f1b4"
+      sha256 "43397f6933e3fd75dc5e7671cc4cdc60e5fc734e750a02ec15c4ca66df3053f8"
     end
   end
 
